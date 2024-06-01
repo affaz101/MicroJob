@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MyAuth"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <TableLayout
+        android:id="@+id/myauth_tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/myauth_btn_recruiter_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/selected"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:text="Recruiter"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/myauth_btn_candidate_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F1EEF6"
+                android:textColor="#000000"
+                android:text="Candidate"
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/myauth_vp2_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/acc_tablayout_id">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+</LinearLayout>

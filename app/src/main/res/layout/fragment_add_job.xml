@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddJobFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:elevation="0.001dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_add_job_title_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Job Title"
+                    app:hintTextAppearance="@style/MyHintTextSizeAppearance"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_et_job_title_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_add_job_desc_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Job Description"
+                    app:hintTextAppearance="@style/MyHintTextSizeAppearance"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <EditText
+                        android:id="@+id/add_et_job_desc_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100sp"
+                        android:hint="Describe work description in details. Those you didn't mentioned, Worker won't take the responsibility of doing that."
+                        android:inputType="textMultiLine"
+                        android:gravity="top|left"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Job Payment"
+                        app:hintTextAppearance="@style/MyHintTextSizeAppearance"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:suffixText="BDT"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/add_et_job_payment_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:elevation="0.1dp"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:elevation="0.005dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/inria_regular"
+                            android:layout_marginTop="-3dp"
+                            android:text="Job Location"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+                        <FrameLayout
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/spinner_box_stroke"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:elevation="0.1dp"
+                                android:id="@+id/add_job_loc_spn_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp" />
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Job Place"
+                        app:hintTextAppearance="@style/MyHintTextSizeAppearance"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    >
+                    <LinearLayout
+                        android:id="@+id/la"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="0.1dp"
+                            android:layout_weight="1"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/inria_regular"
+                                android:elevation="0.005dp"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-5dp"
+                                android:text="Job Type"
+                                android:textSize="15sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/spinner_box_stroke"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/add_job_type_spn_id"
+                                    android:elevation="0.1dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp" />
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/add_ll_time_id"
+                        android:layout_weight="0.9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:elevation="0.005dp"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:fontFamily="@font/inria_regular"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-5dp"
+                                android:text="Job Duration"
+                                android:textSize="15sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/spinner_box_stroke"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:clickable="true"
+                                    android:id="@+id/add_tv_time_text_id"
+                                    android:gravity="center|right"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="20dp"
+                                    android:layout_weight="0.5"
+                                    android:lineSpacingMultiplier="0.8"
+                                    android:text="From: 00:00 AM\nTo: 00:00 PM"
+                                    android:fontFamily="@font/inria_regular"
+                                    android:textSize="16sp"
+
+                                    />
+                                <ImageView
+                                    android:id="@+id/add_time_piker_btn_id"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:clickable="true"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/icon_part_time"
+                                    />
+
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:clickable="true"
+                        android:id="@+id/add_map_btn_id"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_box_stroke"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/add_iv_googel_map_icon_id"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/icon_location"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/add_tv_google_map_text_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inria_regular"
+                            android:lineSpacingMultiplier="0.8"
+                            android:text="Google Map Location"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Job Address"
+                        app:hintTextAppearance="@style/MyHintTextSizeAppearance"
+                        android:paddingRight="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/add_et_job_addr_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="100sp"
+                            android:layout_marginBottom="10dp"
+                            android:inputType="textMultiLine"
+                            android:gravity="top|left"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/inria_regular"
+                        android:text="Are You Sure, is all Above info is correct?"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/add_check_box_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes, I am sure."
+
+                        />
+                </LinearLayout>
+                <FrameLayout
+                    android:clickable="true"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/add_job_add_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:alpha="0.5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Job"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/inria_bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:elevation="0.05dp"
+                        />
+                    <ImageView
+                        android:elevation="0.0001dp"
+                        android:layout_width="250dp"
+                        android:scaleX="1.5"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:scaleY="1.1"
+                        android:src="@drawable/confirm_btn_bg"/>
+                </FrameLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_job_add_progress_id"
+        android:elevation="0.005dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+    </LinearLayout>
+
+
+
+</FrameLayout>

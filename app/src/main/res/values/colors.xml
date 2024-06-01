@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="selected">#8A73BA</color>
+    <color name="unselected">#F1EEF6</color>
+    <color name="gray">#B5B5B5</color>
+
+    <color name="c1">#C6BC57</color>
+    <color name="c2">#50DCED</color>
+    <color name="c3">#E5DEF0</color>
+    <color name="card_bg">#FAFAFB</color>
+    <color name="deep_select_color">#6D5B93</color>
+    <color name="shadow_colored_bg_color">#E5DFF1</color>
+
+
+
+</resources>

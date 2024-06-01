@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MyMapFragmentDialog">
+
+        <FrameLayout
+            android:id="@+id/JobLoc_map_fragment_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/jobLocation_iv_my_current_location_id"
+                    android:clickable="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/icon_map_search_my_current_location"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/jobLocation_iv_direction_btn_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_directions"
+                    app:layout_constraintBottom_toTopOf="@+id/jobLocation_iv_job_location_btn_id"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/jobLocation_iv_job_location_btn_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_map_location"
+                    app:layout_constraintBottom_toTopOf="@+id/jobLocation_iv_my_current_location_id"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/jobLocation_tv_coardinator_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.0 - 0.0"
+            android:layout_gravity="center_horizontal"
+            />
+
+</FrameLayout>
+
+
+
+
+<!--<fragment-->
+<!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent" />-->

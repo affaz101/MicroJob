@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "313403642009",
+    "project_id": "microjob-afbc8",
+    "storage_bucket": "microjob-afbc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313403642009:android:b6074b4e79a5d9b0e4e808",
+        "android_client_info": {
+          "package_name": "com.abu.microjob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNFWV3aKUwP2oxKQ6EeU2T0_zlJJGcK8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

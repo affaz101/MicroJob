@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.AccountFragment"
+    android:background="#FFFFFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/account_profile_iv_img_id"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/icon_profile_colored"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="User Type : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_type_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="User ID : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_id_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="User Name : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_name_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="User Gender : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_gender_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="Phone Number: "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_phone_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="right"
+                    android:text="Date of Birth : "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/account_profile_tv_user_dob_id"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/inria_regular"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:id="@+id/account_profile_fl_user_sign_out_id"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/inria_bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:elevation="0.05dp"
+                    />
+                <ImageView
+                    android:elevation="0.0001dp"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/confirm_btn_bg"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+    <!--
+
+        <TableLayout
+            android:id="@+id/acc_tablayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TableRow>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_recruiter_id"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/selected"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent"
+                    android:text="Recruiter"
+                    android:textSize="17sp"
+                    android:textAllCaps="false"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_candidate_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F1EEF6"
+                    android:textColor="#000000"
+                    android:text="Candidate"
+                    android:textAllCaps="false"
+                    android:textSize="17sp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/acc_vp2_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/acc_tablayout_id">
+
+        </androidx.viewpager2.widget.ViewPager2>
+    -->

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MyMapFragmentDialog">
+
+        <FrameLayout
+            android:id="@+id/map_fragment_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+
+
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@drawable/loc_search_bg"
+            android:layout_height="50dp"
+            android:layout_gravity="top">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_search_location_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Search Place"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="top" />
+
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_my_current_location_id"
+                    android:clickable="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/icon_map_search_my_current_location"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_direction_btn_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_directions"
+                    app:layout_constraintBottom_toTopOf="@+id/iv_my_current_location_id"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/confirm_button"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Confirm" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/map_pin_marker_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_map_pin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_map_job_location_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Job Location"
+                    android:fontFamily="@font/inria_regular"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/map_pin_marker_id"
+                    app:layout_constraintEnd_toEndOf="@+id/map_pin_marker_id"
+                    app:layout_constraintStart_toStartOf="@+id/map_pin_marker_id" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_coardinator_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2121.212 s 54.212"
+            android:layout_gravity="center_horizontal"
+            />
+
+</FrameLayout>
+
+
+
+
+<!--<fragment-->
+<!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent" />-->

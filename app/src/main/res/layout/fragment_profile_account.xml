@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileAccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_iv_img_id"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/icon_profile_colored"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_iv_img_id"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="User Type : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_type_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="Recruiter"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="User ID : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_id_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="152451"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="User Name : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_name_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="Abu Bakar"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="User Gender : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_gender_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="Male"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="Phone Number: "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_phone_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="01524545"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="right"
+                            android:text="Date of Birth : "
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_user_dob_id"
+                            android:padding="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/inria_regular"
+                            android:gravity="left"
+                            android:text="17 jan 1995\n21 years old"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                    <FrameLayout
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/profile_fl_user_log_out_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Out"
+                            android:textSize="25sp"
+                            android:fontFamily="@font/inria_bold"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:elevation="0.05dp"
+                            />
+                        <ImageView
+                            android:elevation="0.0001dp"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/confirm_btn_bg"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

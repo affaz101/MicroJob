@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="160sp">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/your_job_item_bg_white"
+        />
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center_horizontal"
+            >
+            <TextView
+                android:id="@+id/your_job_item_tv_applied_count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:fontFamily="@font/inria_regular"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=" : Applied"
+                android:fontFamily="@font/inria_regular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|left"
+
+            android:layout_height="90dp">
+
+            <TextView
+                android:id="@+id/your_job_item_tv_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helping hand for chef"
+                android:textSize="20sp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/your_job_item_tv_payment_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300  BDT"
+                    />
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/circle_colored_bulet"
+                    />
+
+                <TextView
+                    android:id="@+id/your_job_item_tv_loc_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Site"
+                    />
+                <View
+                    android:id="@+id/conditional_hide_id"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/circle_colored_bulet"
+                    />
+
+                <TextView
+                    android:id="@+id/your_job_item_tv_time_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9AM-2PM"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="11"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/your_job_item_tv_posted_time_id"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="15h Ago"
+                />
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/selected"
+                />
+
+            <TextView
+                android:id="@+id/your_job_item_tv_addr_id"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:text="Mirpur 6"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
